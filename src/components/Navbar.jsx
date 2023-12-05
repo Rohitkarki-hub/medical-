@@ -106,6 +106,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             className="hover:text-hoverColor transition-all cursor-pointer"
+            onClick={closeMenu}
           >
             Home
           </Link>
@@ -116,6 +117,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             className="hover:text-hoverColor transition-all cursor-pointer"
+            onClick={closeMenu}
           >
             About Us
           </Link>
@@ -125,6 +127,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             className="hover:text-hoverColor transition-all cursor-pointer"
+            onClick={closeMenu}
           >
             Services
           </Link>
@@ -134,6 +137,7 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             className="hover:text-hoverColor transition-all cursor-pointer"
+            onClick={closeMenu}
           >
             Doctors
           </Link>
@@ -143,11 +147,15 @@ const Navbar = () => {
             smooth={true}
             duration={500}
             className="hover:text-hoverColor transition-all cursor-pointer"
+            onClick={closeMenu}
           >
             Blogs
           </Link>
           <div className=" lg:hidden">
-            <button className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out">
+            <button
+              className="bg-brightColor text-white px-4 py-2 rounded-md hover:bg-hoverColor transition duration-300 ease-in-out first-letter"
+              onClick={openForm}
+            >
               Contact Us
             </button>
           </div>

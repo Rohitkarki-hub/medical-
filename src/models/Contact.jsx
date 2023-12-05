@@ -1,9 +1,13 @@
+import Button from "../layouts/Button";
+
 const Contact = (closeForm) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
       <div className=" popup-form absolute mt-12 text-black">
         <form className="w-80 md:w-96 space-y-5 bg-white p-5 rounded-xl">
-          <h1 className="text-4xl font-semibold text-center">Book now</h1>
+          <h1 className="text-4xl font-semibold text-center text-backgroundColor">
+            Book now
+          </h1>
           <div className="flex flex-col">
             <input
               type="text"
@@ -40,8 +44,8 @@ const Contact = (closeForm) => {
               className="py-3 px-2 bg-[#d5f2ec] rounded-lg"
             />
           </div>
-          <div>
-            <button>Book Appointment</button>
+          <div className="flex gap-5">
+            <Button title="Book Appointment" />
             <button
               className="bg-backgroundColor text-white px-10 rounded-md active:bg-red-500"
               onClick={closeForm}
